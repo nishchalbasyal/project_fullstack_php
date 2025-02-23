@@ -1,0 +1,187 @@
+@import "_variables";
+
+.task-manager {
+    width: 80%;
+    padding: 0px 50px;
+    background-color: $bgcolor;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 600px;
+    margin: 0 auto;
+
+
+    @include responsive {
+        width: 100%;
+        padding: 0px 10px;
+        margin: 10px auto;
+        min-height: 350px;
+    }
+
+    h1 {
+        color: $primary;
+
+        @include responsive {
+            font-size: 23px;
+        }
+    }
+
+
+    p {
+        color: $activeText;
+        font-size: 12px;
+        font-weight: 300px;
+
+        @include responsive {
+            font-size: 10px;
+        }
+    }
+
+    .task-container {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        padding: 30px 40px;
+        width: 63%;
+        min-height: 200px;
+        border-radius: 13px;
+
+        @include responsive {
+            width: 100%;
+        }
+
+        .task-holder {
+            width: 100%;
+            max-height: 200px;
+            overflow-y: auto;
+
+            .task {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: 7px 5px;
+                cursor: pointer;
+
+                .task-text {
+
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    gap: 5px;
+
+                    input {
+                        cursor: pointer;
+                    }
+
+                    input[type="checkbox"] {
+                        width: 10px;
+                        height: 10px;
+
+
+                        &:hover {
+                            width: 12px;
+                            height: 12px;
+                            color: $primary;
+                        }
+                    }
+
+
+
+
+
+                    label {
+                        cursor: pointer;
+                        font-weight: $activeText;
+                        font-size: 10px;
+                    }
+                }
+
+                .button {
+                    cursor: pointer;
+
+                    button {
+                        cursor: pointer;
+                        display: flex;
+                        gap: 5px;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid $btn_secondary;
+                        background-color: white;
+                        color: $btn_secondary;
+                        font-weight: 400;
+                        font-size: 7px;
+                        padding: 3px 5px;
+
+
+                        &:hover {
+                            font-size: 9px;
+                            padding: 4px 6px;
+                        }
+
+                    }
+                }
+
+
+
+
+                &:hover {
+                    background-color: #c4bdfec9;
+                }
+            }
+
+
+            .dragging {
+                background-color: red;
+                cursor: grabbing;
+                opacity: 0.5;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+
+
+        }
+
+        .form-input {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 10px;
+            flex-direction: column;
+            padding: 0px 10px;
+            margin-top: 15px;
+
+            @include responsive {
+                margin-top: 7px;
+            }
+
+
+            input {
+                width: 100%;
+                padding: 10px 9px;
+                border: 1px solid #9b9b9b;
+                border-radius: 7px;
+                font-size: 10px;
+
+            }
+
+            button {
+                padding: 7px 25px;
+                font-size: 10px;
+                background-color: $primary;
+                border: none;
+                color: white;
+                border-radius: 13px;
+                cursor: pointer;
+            }
+        }
+
+
+    }
+}

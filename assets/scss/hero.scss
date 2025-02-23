@@ -1,0 +1,126 @@
+@import "_variables";
+
+.hero-section {
+  width: 100%;
+  min-height: 350px;
+  background-color: $secondary;
+  padding: 10px 15px;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+
+
+  @include responsive {
+    display: block;
+    padding: 0px;
+    margin: 0;
+  }
+
+  .img_slider {
+    color: white;
+    display: flex;
+    padding: 25px 50px;
+    width: 100%;
+    min-height: 300px;
+    overflow: hidden;
+    gap: 30px;
+    justify-content: space-evenly;
+
+
+    @include responsive {
+      flex-direction: column;
+      padding: 0px;
+      align-items: stretch;
+    }
+
+
+
+    .section-1 {
+      gap: 22px;
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      padding: 18px 10px;
+
+      @include responsive {
+        width: 100%;
+        padding: 0px 10px;
+
+      }
+
+      h2 {
+        font-size: 47px;
+
+        @include responsive {
+
+          font-size: 27px;
+
+        }
+      }
+
+      p {
+        font-size: 11px;
+        font-weight: 300;
+
+        @include responsive {
+
+          font-size: 10px;
+
+        }
+      }
+
+      button {
+        @include button-primary;
+        width: 111px;
+
+
+      }
+
+      span {
+        display: flex;
+        gap: 5px;
+
+        .round_box {
+          width: 10px;
+          height: 10px;
+          background-color: $activeText;
+          border-radius: 50%;
+        }
+
+        .active {
+          background-color: $iconsPrimary;
+        }
+      }
+    }
+
+    .section-2 {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 400px;
+
+      @include responsive {
+
+        display: none;
+
+      }
+
+
+
+      img {
+        width: 450px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+
+
+
+      }
+    }
+  }
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}

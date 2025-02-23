@@ -1,0 +1,6 @@
+{
+    "require": {
+        "scssphp/scssphp": "2.0.1",
+        "symfony/finder": "^7.2"
+    }
+}

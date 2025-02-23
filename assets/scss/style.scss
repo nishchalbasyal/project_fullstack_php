@@ -1,0 +1,14 @@
+@import "navigation";
+@import "font";
+@import "hero";
+@import "payment_collection";
+@import "task_manager";
+@import "footer";
+@import "contactform";
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}

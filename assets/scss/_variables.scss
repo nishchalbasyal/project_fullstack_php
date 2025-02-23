@@ -1,0 +1,21 @@
+$primary : #4532FC;
+$secondary: #121D2D;
+$logoColor: #1A1A1A;
+$btn_secondary : #FC4B4B;
+$btn_hover: #4632fce2;
+$bgcolor : #F1F0FF;
+
+
+$textPrimary: #121D2D;
+$activeText: #616161;
+$iconsPrimary: #E53FB6;
+
+
+
+@mixin button-primary {
+     padding: 8px 15px;
+      border-radius: 16px;
+      border: none;
+      cursor: pointer;
+
+}
