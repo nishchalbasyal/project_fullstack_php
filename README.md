@@ -1,3 +1,5 @@
+ ## 🎥 Demo Video
+[![Demo Video](https://github.com/user-attachments/assets/612a5e98-f8d9-46af-966d-e8da8eb18ebf)](https://youtu.be/HQCy5T7tldk)
 
 ## 🚀 Setup Instructions  
 
